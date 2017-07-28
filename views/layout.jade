@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/blog.css")
+    script(type="text/javascript",src="/javascripts/jquery.js")
+    script(type="text/javascript",src="/javascripts/bootstrap.min.js")
+    script(type='text/javascript',src='/javascripts/blog.js')
+  body
+    div.navbar.nav-fixed-top.navbar-default
+       div.container-fluid
+          div.navbar-header.container
+            a.navbar-brand(href="/") MyBlog  
+            div.collapse.navbar-collapse
+              ul.nav.navbar-nav
+                li 
+                  a(href='/') 首页
+                li 
+                  a(href='/login') 登录
+                li 
+                  a(href='/logout') 退出
+                li 
+                  a(href='/register') 注册
+                li 
+                  a(href='/language') 切换语言
+    div#container.container
+       block content
+    footer 
+       p hahahah               
+      
